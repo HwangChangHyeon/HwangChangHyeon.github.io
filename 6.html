@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "UTF-8">
+        <style>
+            button{
+                width : 100px;
+                height : 30px;
+                border : 1px solid red;
+            }
+            img{
+                border: 2px solid red;
+            }
+        </style>
+        <script src="http://code.jquery.com/jquery-3.4.1.js"></script>
+        <script>
+            $(document).ready(function() {
+                $("#btn1").click(function(){
+                    $("#snow").animate({marginLeft: "+=20px"}, 10);
+                    $("#snow").animate({marginTop: "+=20px"}, 10);
+                    $("#snow").animate({marginLeft: "-=20px"}, 10);
+                    $("#snow").animate({marginTop: "-=20px"}, 10);
+                });
+                $("#btn2").click(function(){
+                    $("img").animate({height: "toggle"}, "slow");
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <img src="asd.png" id="snow" width=300 height = 200>
+        <br> <b>asd</b> <br>
+        <button id="btn1">좌우이동</button>
+        <button id="btn2">이미지토글</button>
+    </body>
+</html>
