@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "UTF-8">
+        <link href="https://fonts.googleapis.com/css?family=Do+Hyeon&display=swap" rel="stylesheet">
+        <style>
+            * {font-family: 'Do Hyeon', sans-serif;}
+            section div{
+                float:left;
+                width:250px;
+                height: 300px;
+                margin-left:40px;
+                margin-top : 20px;
+                padding:0px;
+            }
+            section div img{
+                width:250px;
+                height:300px;
+            }
+            span {
+                margin-left:40px;
+                margin-right:25px;
+            }
+            #text {
+                width:auto;
+                height: auto;
+            }
+            h2 {
+                margin-left:40px;
+            }
+            
+        </style>
+        <script src="http://code.jquery.com/jquery-3.4.1.js"></script>
+        <script>
+            $(document).ready(function() {
+                $("#p1").click(function(){
+                    $("#p1").animate({width:'+=60'},1000);
+                    $("#p1").animate({height:'+=60'},1000);
+                    $("#p1").css("margin-right","+=20px");
+                });
+                $("#p2").click(function(){
+                    $("#p2").animate({width:'+=60'},1000);
+                    $("#p2").animate({height:'+=60'},1000);
+                    $("#p2").css("margin-right","+=20px");
+                });
+                $("#p3").click(function(){
+                    $("#p3").animate({width:'+=60'},1000);
+                    $("#p3").animate({height:'+=60'},1000);
+                    $("#p3").css("margin-right","+=20px");
+                });
+                $("#p4").click(function(){
+                    $("#p4").animate({width:'+=60'},1000);
+                    $("#p4").animate({height:'+=60'},1000);
+                    $("#p4").css("margin-right","+=20px");
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div>
+            <img src="p5.png">
+        </div>
+        <h2>아래 사진을 누르면 사진을 확대해서 볼 수 있습니다.</h2>
+        <section>
+            <div><img src="p1.png" id="p1"></div>
+            <div><img src="p2.png" id="p2"></div>
+            <div><img src="p3.png" id="p3"></div>
+            <div><img src="p4.png" id="p4"></div>
+            <div id="text">
+            <span>2020달력.오늘 전설이 될 것 이다</span>
+            <span>2020다이어리.오늘 전설이 될 것 이다</span>
+            <span>ㅋㅋㅋㅋㅋ슬리퍼 블랙ㅋㅋㅋㅋㅋㅋㅋ</span>
+            <span>쓰고자자 제발. 일기장. 쓰고 자자</span>
+            </div>
+        </section>
+    </body>
+</html>

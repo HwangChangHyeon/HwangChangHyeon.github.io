@@ -3,6 +3,7 @@
 }
 body {
     margin:0px;
+    
 }
 
 header{
@@ -20,6 +21,9 @@ header h1 img{
     weight:80px;
 }
 
+nav {
+    width:auto;
+}
 nav ul{
     margin:0px;
     list-style: none;
@@ -27,6 +31,7 @@ nav ul{
     border-style:solid;
     border-width:1px;
     padding: 10px 0;
+    width:auto;
 }
 
 nav ul li{
@@ -89,13 +94,18 @@ aside#left{
 section {
     border-style:solid;
     border-width:1px;
+    width:auto;
+    margin:auto;
 }
 
 #main{
     color:#444;
+    position:absolute;;
     overflow:hidden;
-    float:left;
+    margin-top:0px;
+    margin-left:151px;
     width:91%;
+    float:left;
 }
 footer{
     padding-top:10px;
